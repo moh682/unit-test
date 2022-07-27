@@ -7,6 +7,6 @@ describe('callback', () => {
   it('should execute callback function', async () => {
     await delayyer(myCallback);
 
-    expect(myCallback).toHaveBeenCalledOnce;
+    expect(myCallback).toHaveBeenCalledOnce();
   });
 });
