@@ -1,6 +1,5 @@
 export const delayyer = async (callback: () => void, delay: number = 1000) => {
-  setTimeout(() => {
+  setTimeout(async () => {
     callback();
-    Promise.resolve();
   }, delay);
 };
